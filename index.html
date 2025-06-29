@@ -138,16 +138,32 @@
 <!-- Welcome Modal -->
 <!-- Stylish Welcome Popup -->
 <!-- Enhanced Welcome Popup -->
-<div id="welcomePopup" class="position-fixed top-50 start-50 translate-middle p-5 text-center rounded-5 shadow-lg"
-     style="z-index:1055; width: 90%; max-width: 800px; height: 70vh; background: linear-gradient(135deg, #ffcc70, #ff6f61); color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Georgia', serif; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-  
-  <h1 style="font-family: 'Lucida Handwriting', cursive; font-size: 2.5rem;">✨ Welcome ✨</h1>
-  <h2 class="my-2">Khatri Jewellers</h2>
-  <h5 class="mb-3">Gurua, Gaya JI</h5>
+<!-- Responsive & Stylish Welcome Popup -->
+<!-- Enhanced Stylish Popup with Background Image -->
+<div id="welcomePopup" class="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center text-center"
+     style="z-index: 1055; background: 
+        linear-gradient(rgba(218,165,32,0.6), rgba(255,192,203,0.6)), 
+        url('first.webp') 
+        no-repeat center center / cover;">
 
-  <p style="font-size: 1.2rem;">Call us: <strong>8709376520</strong></p>
-  <p style="font-size: 1rem;">Pro by <strong>Ritik Kumar Khatri</strong> & <strong>Ramesh Kumar Khatri</strong></p>
+  <div class="p-5 rounded-4 shadow-lg" style="
+       background-color: rgba(255, 255, 255, 0.2); 
+       backdrop-filter: blur(10px);
+       border: 2px solid rgba(255, 255, 255, 0.3);
+       max-width: 600px; 
+       width: 90%;
+       color: #fff;
+       font-family: 'Georgia', serif;
+  ">
+    <h2 class="fw-bold mb-2" style="font-family: 'Lucida Handwriting', cursive; color: #fff;">Welcome</h2>
+    <h4 class="mb-1">Khatri Jewellers</h4>
+    <p class="mb-2">Gurua, Gaya</p>
+
+    <p class="mb-1">📞 <strong>8709376520</strong></p>
+    <p class="small">Pro by <strong>Ritik Kumar Khatri</strong> & <strong>Ramesh Kumar Khatri</strong></p>
+  </div>
 </div>
+
 
 
 <body>
@@ -258,7 +274,7 @@
           <div class="row">
             <div class="col-md-3 col-6">
               <div class="card product-card">
-                <img src="first_p.jpeg" class="card-img-top" alt="Gold Ring">
+                <img src="product/first.jpeg" class="card-img-top" alt="Gold Ring">
                 <div class="card-body text-center">
                   <h5 class="card-title">Gold Ring</h5>
                   <p class="card-text text-muted">₹14,999</p>
@@ -268,7 +284,7 @@
             </div>
             <div class="col-md-3 col-6">
               <div class="card product-card">
-                <img src="second_p.jpeg" class="card-img-top" alt="Necklace">
+                <img src="product/second.jpeg" class="card-img-top" alt="Necklace">
                 <div class="card-body text-center">
                   <h5 class="card-title">Necklace</h5>
                   <p class="card-text text-muted">₹45,999</p>
@@ -278,7 +294,7 @@
             </div>
             <div class="col-md-3 col-6 d-none d-md-block">
               <div class="card product-card">
-                <img src="third_p.jpeg" class="card-img-top" alt="Earrings">
+                <img src="product/third.jpeg" class="card-img-top" alt="Earrings">
                 <div class="card-body text-center">
                   <h5 class="card-title">Diamond Earrings</h5>
                   <p class="card-text text-muted">₹25,999</p>
@@ -288,7 +304,7 @@
             </div>
             <div class="col-md-3 col-6 d-none d-md-block">
               <div class="card product-card">
-                <img src="forth_p.jpeg" class="card-img-top" alt="Bangle">
+                <img src="product/forth.jpeg" class="card-img-top" alt="Bangle">
                 <div class="card-body text-center">
                   <h5 class="card-title">Bangle</h5>
                   <p class="card-text text-muted">₹9,999</p>
@@ -304,7 +320,7 @@
           <div class="row">
             <div class="col-md-3 col-6">
               <div class="card product-card">
-                <img src="fifth_p.jpeg" class="card-img-top" alt="Mangalsutra">
+                <img src="product/fifth.jpeg" class="card-img-top" alt="Mangalsutra">
                 <div class="card-body text-center">
                   <h5 class="card-title">Mangalsutra</h5>
                   <p class="card-text text-muted">₹12,499</p>
@@ -314,7 +330,7 @@
             </div>
             <div class="col-md-3 col-6">
               <div class="card product-card">
-                <img src="first_p.jpeg" class="card-img-top" alt="Bracelet">
+                <img src="product/first.jpeg" class="card-img-top" alt="Bracelet">
                 <div class="card-body text-center">
                   <h5 class="card-title">Gold Bracelet</h5>
                   <p class="card-text text-muted">₹7,999</p>
@@ -324,7 +340,7 @@
             </div>
             <div class="col-md-3 col-6 d-none d-md-block">
               <div class="card product-card">
-                <img src="second_p.jpeg" class="card-img-top" alt="Set">
+                <img src="product/second.jpeg" class="card-img-top" alt="Set">
                 <div class="card-body text-center">
                   <h5 class="card-title">Jewellery Set</h5>
                   <p class="card-text text-muted">₹59,999</p>
@@ -334,7 +350,7 @@
             </div>
             <div class="col-md-3 col-6 d-none d-md-block">
               <div class="card product-card">
-                <img src="third_p.jpeg" class="card-img-top" alt="Anklet">
+                <img src="product/third.jpeg" class="card-img-top" alt="Anklet">
                 <div class="card-body text-center">
                   <h5 class="card-title">Anklet</h5>
                   <p class="card-text text-muted">₹4,499</p>
